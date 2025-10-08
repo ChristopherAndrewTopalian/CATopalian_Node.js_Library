@@ -1,8 +1,8 @@
-// writeSimpleAsync.js
+// writeSimple.js
 
 let fs = require('fs');
 
-function writeSimpleAsync(whichName, whichData)
+function writeSimple(whichName, whichData)
 {
     fs.writeFile(whichName, whichData, function(theError)
     {
@@ -19,7 +19,7 @@ function writeSimpleAsync(whichName, whichData)
 
 //----//
 
-writeSimpleAsync('ourFile.txt', "Hi Everyone");
+writeSimple('ourFile.txt', "Hi Everyone");
 
 //----//
 

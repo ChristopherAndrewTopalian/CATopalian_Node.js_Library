@@ -1,11 +1,10 @@
-// writeAsync2.js
+// write.js
 
-function writeAsync2(whichName, whichData, whichMode)
+let fs = require('fs');
+
+function write(whichName, whichData, whichMode = 'w')
 {
-    // default to overwrite if no mode given
-    let mode = whichMode || 'w';
-
-    fs.writeFile(whichName, whichData, { flag: mode }, function(theError)
+    fs.writeFile(whichName, whichData, { flag: whichMode }, function(theError)
     {
         if (theError)
         {
@@ -13,7 +12,7 @@ function writeAsync2(whichName, whichData, whichMode)
         }
         else
         {
-            console.log('file written with mode: ' + mode);
+            console.log('file written with mode: ' + whichMode);
         }
     });
 }
@@ -21,10 +20,10 @@ function writeAsync2(whichName, whichData, whichMode)
 //----//
 
 // overwrite
-writeAsync2('ourFile.txt', "Hi Everyone\n", 'w');
+write('ourFile.txt', "Hi Everyone\n", 'w');
 
 // append
-writeAsync2('ourFile.txt', "Another line here\n", 'a');
+write('ourFile.txt', "Another line here\n", 'a');
 
 //----//
 

@@ -1,8 +1,8 @@
-// readAsync.js
+// read.js
 
 let fs = require('fs');
 
-function readAsync(whichName, callback)
+function read(whichName, callback)
 {
     fs.readFile(whichName, 'utf8', function(error, data)
     {
@@ -17,7 +17,7 @@ function readAsync(whichName, callback)
 
 //----//
 
-readAsync('ourFile.txt', function(contents)
+read('ourFile.txt', function(contents)
 {
     console.log('file contents:\n' + contents);
 });
