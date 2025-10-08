@@ -7,7 +7,7 @@ A collection of useful Node.js functions
 
 ---
 
-For Sync functions click this link [link](src/js/sync/sync.md)  
+For Sync functions click this [link](src/js/sync/sync.md)  
 
 ---
 
