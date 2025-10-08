@@ -3,6 +3,8 @@ A collection of useful Node.js functions
 
 ---
 
+![001](src/media/textures/bg/001.jpg)
+
 # Sync
 
 # File
