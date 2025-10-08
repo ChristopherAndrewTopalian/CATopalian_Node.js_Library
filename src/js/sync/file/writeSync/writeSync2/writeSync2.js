@@ -1,14 +1,17 @@
-// writeSync.js
+// writeSync2.js
 
 const fs = require('fs');
 
-function writeSync(whichName, whichData, whichMode = 'w')
+function writeSync2(whichName, whichData, whichMode)
 {
+    // default to overwrite if no mode given
+    let mode = whichMode || 'w';
+
     try
     {
-        fs.writeFileSync(whichName, whichData, { flag: whichMode });
+        fs.writeFileSync(whichName, whichData, { flag: mode });
 
-        console.log('File written synchronously with mode: ' + whichMode);
+        console.log('File written synchronously with mode: ' + mode);
     }
     catch (theError)
     {
@@ -19,10 +22,12 @@ function writeSync(whichName, whichData, whichMode = 'w')
 //----//
 
 // overwrite
-writeSync('ourFile.txt', "Hi Everyone\n", 'w');
+writeSync2('ourFile.txt', "Hi Everyone\n", 'w');
+
+//----//
 
 // append
-writeSync('ourFile.txt', "Another line here\n", 'a');
+writeSync2('ourFile.txt', "Another line here\n", 'a');
 
 //----//
 
