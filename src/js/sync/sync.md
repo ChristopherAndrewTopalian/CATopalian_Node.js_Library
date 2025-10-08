@@ -2,15 +2,15 @@
 
 # File
 
-> ## [writeSync](src/js/sync/file/writeSync/writeSync.js)
+> ## [writeSync](file/writeSync/writeSync.js)
 
-> ## [readSync](src/js/sync/file/readSync/readSync.js)
+> ## [readSync](file/readSync/readSync.js)
 
 ---
 
 # Disk
 
-> ## [getDiskSpaceSync](src/js/sync/disk/getDiskSpaceSync.js)
+> ## [getDiskSpaceSync](disk/getDiskSpaceSync.js)
 
 //----//
 
