@@ -17,7 +17,7 @@ A collection of useful Node.js functions
 
 # Disk
 
-> #
+> ## [getDiskSpaceSync](src/js/sync/disk/getDiskSpaceSync.js)
 
 ---
 
@@ -28,6 +28,12 @@ A collection of useful Node.js functions
 > ## [writeAsync](src/js/async/file/writeAsync/writeAsync.js)
 
 > ## [readAsync](src/js/async/file/readAsync/readAsync.js)
+
+---
+
+# Disk
+
+[getDiskSpaceAsync](src/js/async/disk/getDiskSpace.js)
 
 ---
 
