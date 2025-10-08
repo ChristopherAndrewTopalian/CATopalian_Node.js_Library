@@ -17,7 +17,7 @@ For Sync functions click this link [link](src/js/sync/sync.md)
 
 > ## [write](src/js/async/file/write/write.js)
 
-> ## [readA](src/js/async/file/read/read.js)
+> ## [read](src/js/async/file/read/read.js)
 
 ---
 
