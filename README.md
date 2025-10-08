@@ -15,15 +15,15 @@ For Sync functions click this link [link](src/js/sync/sync.md)
 
 # File
 
-> ## [writeAsync](src/js/async/file/write/write.js)
+> ## [write](src/js/async/file/write/write.js)
 
-> ## [readAsync](src/js/async/file/read/read.js)
+> ## [readA](src/js/async/file/read/read.js)
 
 ---
 
 # Disk
 
-[getDiskSpaceAsync](src/js/async/disk/getDiskSpace.js)
+[getDiskSpace](src/js/async/disk/getDiskSpace.js)
 
 ---
 
