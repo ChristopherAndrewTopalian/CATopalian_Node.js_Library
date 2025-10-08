@@ -23,7 +23,7 @@ For Sync functions click this [link](src/js/sync/sync.md)
 
 # Disk
 
-> ## [getDiskSpace](src/js/async/disk/getDiskSpace.js)
+> ## [getDiskSpace](src/js/async/disk/getDiskSpace/getDiskSpace.js)
 
 ---
 

@@ -10,7 +10,7 @@
 
 # Disk
 
-> ## [getDiskSpaceSync](disk/getDiskSpaceSync.js)
+> ## [getDiskSpaceSync](disk/getDiskSpaceSync/getDiskSpaceSync.js)
 
 //----//
 
