@@ -5,21 +5,13 @@ A collection of useful Node.js functions
 
 ![001](src/media/textures/bg/001.jpg)
 
-# Sync
+---
 
-# File
-
-> ## [writeSync](src/js/sync/file/writeSync/writeSync.js)
-
-> ## [readSync](src/js/sync/file/readSync/readSync.js)
+For Sync functions click this link [link](src/js/sync/sync.md)  
 
 ---
 
-# Disk
-
-> ## [getDiskSpaceSync](src/js/sync/disk/getDiskSpaceSync.js)
-
----
+Below we show the Async functions:
 
 # Async
 
