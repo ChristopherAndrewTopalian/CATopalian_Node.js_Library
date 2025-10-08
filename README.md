@@ -7,17 +7,19 @@ A collection of useful Node.js functions
 
 # File
 
-> ## [writeSync](src/sync/file/writeSync/writeSync.js)
+> ## [writeSync](src/js/sync/file/writeSync/writeSync.js)
+
+> ## [readSync](src/js/sync/file/readSync/readSync.js)
 
 ---
 
-> ## [writeAsync](src/async/file/writeAsync/writeAsync.js)
+# Async
 
-> ## [readAsync](src/async/file/readAsync/readAsync.js)
+# File
 
----
+> ## [writeAsync](src/js/async/file/writeAsync/writeAsync.js)
 
-> ## [readSync](src/async/file/readSync/readSync.js)
+> ## [readAsync](src/js/async/file/readAsync/readAsync.js)
 
 ---
 
