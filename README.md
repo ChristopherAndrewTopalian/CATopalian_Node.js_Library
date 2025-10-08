@@ -15,6 +15,12 @@ A collection of useful Node.js functions
 
 ---
 
+# Disk
+
+> #
+
+---
+
 # Async
 
 # File
