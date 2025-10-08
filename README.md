@@ -11,8 +11,6 @@ For Sync functions click this link [link](src/js/sync/sync.md)
 
 ---
 
-Below we show the Async functions:
-
 # Async
 
 # File
