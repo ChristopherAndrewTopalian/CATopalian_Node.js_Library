@@ -1,13 +1,13 @@
-// listTextFolderFilesDeep.js
+// listImagesFolderDeep.js
 
 const fs = require('fs');
 const path = require('path');
 
-function listTextFolderFilesDeep()
+function listImagesFolderDeep()
 {
-    let folderPath = './text/'; 
+    let folderPath = './images/'; 
 
-    console.log('Scanning for text in: ' + folderPath + '\n');
+    console.log('Scanning for images in: ' + folderPath + '\n');
 
     try 
     {
@@ -24,10 +24,10 @@ function listTextFolderFilesDeep()
 
             if (item.isFile()) 
             {
-                // get the extension (e.g., ".txt") and lower case it
+                // get the extension (e.g., ".jpg") and lower case it
                 let ext = path.extname(item.name).toLowerCase();
 
-                let allowedTypes = ['.txt', '.c', '.cpp', '.js', '.py', '.rb', '.md', '.rtf', '.html', '.htm', '.xml', '.csv'];
+                let allowedTypes = ['.png', '.jpg', '.jpeg', '.gif'];
 
                 if (allowedTypes.includes(ext))
                 {
@@ -44,18 +44,19 @@ function listTextFolderFilesDeep()
     }
 }
 
-listTextFolderFilesDeep();
+listImagesFolderDeep();
 
 //----//
 
 /*
-Scanning for text in: ./text/
+Scanning for images in: ./images/
 
-text\New Rich Text Document.rtf
-text\New Text Document.md
-text\New Text Document.txt
-text\New Text Document.xml
-text\New folder\New Rich Text Document.rtf
+images\catopalian_true_ai_4D_hypercube_tesseract_011.png
+images\CATopalian_True_AI_Centered.png
+images\TRUE AI 005.png
+images\TRUE AI 006.png
+images\TRUE AI 008.png
+images\New folder\TRUE AI 007.png
 */
 
 //----//
