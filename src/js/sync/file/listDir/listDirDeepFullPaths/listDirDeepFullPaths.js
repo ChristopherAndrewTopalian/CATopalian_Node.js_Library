@@ -51,8 +51,6 @@ New folder\in folder 1.txt
 
 //----//
 
-//----//
-
 // Dedicated to God the Father
 // All Rights Reserved Christopher Andrew Topalian Copyright 2011-2026
 // https://github.com/ChristopherTopalian
