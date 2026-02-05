@@ -3,39 +3,44 @@
 const fs = require('fs');
 const path = require('path');
 
-let folderPath = '.'; 
-
-console.log('Deep scanning: ' + folderPath + '\n');
-
-try 
+function listDirDeepItemNames()
 {
-    // recursive: true
-    // returns a massive single array of EVERYTHING in all subfolders
-    let allFiles = fs.readdirSync(folderPath, { 
-        recursive: true, 
-        withFileTypes: true 
-    });
+    let folderPath = '.'; 
 
-    //-//
+    console.log('Deep scanning: ' + folderPath + '\n');
 
-    for (let i = 0; i < allFiles.length; i++)
+    try 
     {
-        let item = allFiles[i];
+        // recursive: true
+        // returns a massive single array of EVERYTHING in all subfolders
+        let allFiles = fs.readdirSync(folderPath, { 
+            recursive: true, 
+            withFileTypes: true 
+        });
 
-        // we only want files (ignore folder names in the list)
-        if (item.isFile()) 
+        //-//
+
+        for (let i = 0; i < allFiles.length; i++)
         {
-            // construct the full path using the parent folder info
-            //let fullPath = path.join(item.parentPath, item.name);
+            let item = allFiles[i];
 
-            console.log(item.name);
+            // we only want files (ignore folder names in the list)
+            if (item.isFile()) 
+            {
+                // construct the full path using the parent folder info
+                //let fullPath = path.join(item.parentPath, item.name);
+
+                console.log(item.name);
+            }
         }
+    } 
+    catch (err) 
+    {
+        console.error('Error:', err);
     }
-} 
-catch (err) 
-{
-    console.error('Error:', err);
 }
+
+listDirDeepItemNames();
 
 //----//
 

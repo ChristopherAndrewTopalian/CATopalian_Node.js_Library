@@ -1,18 +1,16 @@
-// listDirDeepFullPaths.js
+// listImagesDeep.js
 
 const fs = require('fs');
 const path = require('path');
 
-function listDirDeepFullPaths()
+function listImagesDeep()
 {
     let folderPath = '.'; 
 
-    console.log('Deep scanning: ' + folderPath + '\n');
+    console.log('Scanning for images in: ' + folderPath + '\n');
 
     try 
     {
-        // recursive: true
-        // returns a massive single array of EVERYTHING in all subfolders
         let allFiles = fs.readdirSync(folderPath, { 
             recursive: true, 
             withFileTypes: true 
@@ -24,13 +22,18 @@ function listDirDeepFullPaths()
         {
             let item = allFiles[i];
 
-            // we only want files (ignore folder names in the list)
             if (item.isFile()) 
             {
-                // construct the full path using the parent folder info
-                let fullPath = path.join(item.parentPath, item.name);
+                // get the extension (e.g., ".jpg") and lower case it
+                let ext = path.extname(item.name).toLowerCase();
 
-                console.log(fullPath);
+                // check if it is one of the types we want
+                if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif')
+                {
+                    let fullPath = path.join(item.parentPath, item.name);
+
+                    console.log(fullPath);
+                }
             }
         }
     } 
@@ -40,18 +43,19 @@ function listDirDeepFullPaths()
     }
 }
 
-listDirDeepFullPaths();
+listImagesDeep();
 
 //----//
 
 /*
-Deep scanning: .
+Scanning for images in: .
 
-listDirDeepFullPaths.js
-New Rich Text Document.rtf
-New Text Document.txt
-New folder\in folder 1.rtf
-New folder\in folder 1.txt
+catopalian_true_ai_4D_hypercube_tesseract_011.png
+CATopalian_True_AI_Centered.png
+TRUE AI 005.png
+TRUE AI 006.png
+TRUE AI 008.png
+New folder\TRUE AI 007.png
 */
 
 //----//
