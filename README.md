@@ -25,6 +25,8 @@ For Async functions click this [link](src/js/async/async.md)
 
 > ## [listDirDeepFullPaths](src/js/sync/file/listDir/listDirDeepFullPaths/listDirDeepFullPaths.js)
 
+> ## [listTextFilesDeep](src/js/sync/file/listDir/listTextFilesDeep/listTextFilesDeep.js)
+
 ---
 
 # Disk
