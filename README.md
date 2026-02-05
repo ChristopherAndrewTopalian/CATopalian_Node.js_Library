@@ -7,23 +7,41 @@ A collection of useful Node.js functions
 
 ---
 
-For Sync functions click this [link](src/js/sync/sync.md)  
+For Async functions click this [link](src/js/async/async.md)  
 
 ---
 
-# Async
+# Sync
 
 # File
 
-> ## [write](src/js/async/file/write/write.js)
+> ## [writeSync](src/js/sync/file/writeSync/writeSync.js)
 
-> ## [read](src/js/async/file/read/read.js)
+> ## [readSync](src/js/sync/file/readSync/readSync.js)
+
+> ## [listDirShallowWithType](src/js/sync/file/listDir/listDirShallowWithType/listDirShallowWithType.js)
+
+> ## [listDirDeepItemNames](src/js/sync/file/listDir/listDirDeepItemNames/listDirDeepItemNames.js)
+
+> ## [listDirDeepFullPaths](src/js/sync/file/listDir/listDirDeepFullPaths/listDirDeepFullPaths.js)
 
 ---
 
 # Disk
 
-> ## [getDiskSpace](src/js/async/disk/getDiskSpace/getDiskSpace.js)
+> ## [getDiskSpaceSync](src/js/sync/disk/getDiskSpaceSync/getDiskSpaceSync.js)
+
+---
+
+# Network
+
+[getNetworkInfoSync](src/js/sync/network/getNetworkInfoSync/getNetworkInfoSync.js)
+
+---
+
+# System
+
+[getSystemUptime](src/js/sync/system/getSystemUptime/getSystemUptimeSync.js)
 
 ---
 

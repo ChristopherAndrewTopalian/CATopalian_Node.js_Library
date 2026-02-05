@@ -12,6 +12,18 @@
 
 > ## [getDiskSpaceSync](disk/getDiskSpaceSync/getDiskSpaceSync.js)
 
+---
+
+# Network
+
+[getNetworkInfoSync](network/getNetworkInfoSync/getNetworkInfoSync.js)
+
+---
+
+# System
+
+[getSystemUptime](system/getSystemUptime/getSystemUptimeSync.js)
+
 //----//
 
 // Dedicated to God the Father  
