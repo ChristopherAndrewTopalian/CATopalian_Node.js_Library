@@ -40,18 +40,24 @@ function listDirDeepFullPaths()
     }
 }
 
-listDirDeepFullPaths();
+//----//
+
+module.exports = listDirDeepFullPaths;
 
 //----//
 
-/*
-Deep scanning: .
+if (require.main === module)
+{
+    listDirDeepFullPaths();
+}
 
+/*
 listDirDeepFullPaths.js
-New Rich Text Document.rtf
-New Text Document.txt
-New folder\in folder 1.rtf
-New folder\in folder 1.txt
+pdf\hydrogen.pdf
+text\text001.txt
+videos\001.mp4
+textures\screenshots\001.PNG
+textures\screenshots\001a.PNG
 */
 
 //----//

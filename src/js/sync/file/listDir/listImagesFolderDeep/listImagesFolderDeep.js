@@ -22,7 +22,7 @@ function listImagesFolderDeep()
         {
             let item = allFiles[i];
 
-            if (item.isFile()) 
+            if (item.isFile())
             {
                 // get the extension (e.g., ".jpg") and lower case it
                 let ext = path.extname(item.name).toLowerCase();

@@ -18,10 +18,16 @@ function getDiskSpaceSync()
     }
 }
 
+module.exports = getDiskSpaceSync;
+
 //----//
 
-let data = getDiskSpaceSync();
-console.log('Sync data:\n' + data);
+if (require.main === module)
+{
+    let data = getDiskSpaceSync();
+
+    console.log('Sync data:\n' + data);
+}
 
 //----//
 

@@ -28,7 +28,7 @@ function listImagesDeep()
                 let ext = path.extname(item.name).toLowerCase();
 
                 // check if it is one of the types we want
-                if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif')
+                if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif' || ext === '.webp')
                 {
                     let fullPath = path.join(item.parentPath, item.name);
 
