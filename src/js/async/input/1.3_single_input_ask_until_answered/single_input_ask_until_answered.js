@@ -24,7 +24,7 @@ async function askWithValidation()
         }
 
         // Use .trim() again to clean up any extra spaces around their name
-        console.log(`\nHowdy, ${name.trim()}!`);
+        console.log('\nHowdy, ' + name.trim() + '!');
     }
     finally
     {
