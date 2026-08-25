@@ -9,6 +9,7 @@ async function askWithValidation()
 
     try
     {
+        // We set the variable up empty so the while loop runs at least once.
         let name = "";
 
         // Keep looping as long as the name is empty or just spaces
