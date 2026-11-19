@@ -7,47 +7,9 @@ A collection of useful Node.js functions
 
 ---
 
-For Async functions click this [link](src/js/async/async.md)  
+[TOC](TABLE_OF_CONTENTS.md)
 
----
-
-# Sync
-
-# File
-
-> ## [writeSync](src/js/sync/file/writeSync/writeSync.js)
-
-> ## [readSync](src/js/sync/file/readSync/readSync.js)
-
-> ## [listDirShallowWithType](src/js/sync/file/listDir/listDirShallowWithType/listDirShallowWithType.js)
-
-> ## [listDirDeepItemNames](src/js/sync/file/listDir/listDirDeepItemNames/listDirDeepItemNames.js)
-
-> ## [listDirDeepFullPaths](src/js/sync/file/listDir/listDirDeepFullPaths/listDirDeepFullPaths.js)
-
-> ## [listTextFilesDeep](src/js/sync/file/listDir/listTextFilesDeep/listTextFilesDeep.js)
-
-> ## [listTextFolderFilesDeep](src/js/sync/file/listDir/listImagesFolderDeep/listImagesFolderDeep.js)
-
-> ## [listTextFolderFilesDeep](src/js/sync/file/listDir/listTextFolderFilesDeep/listTextFolderFilesDeep.js)
-
----
-
-# Disk
-
-> ## [getDiskSpaceSync](src/js/sync/disk/getDiskSpaceSync/getDiskSpaceSync.js)
-
----
-
-# Network
-
-[getNetworkInfoSync](src/js/sync/network/getNetworkInfoSync/getNetworkInfoSync.js)
-
----
-
-# System
-
-[getSystemUptime](src/js/sync/system/getSystemUptime/getSystemUptimeSync.js)
+[CODE BOOK](CODE_BOOK.md)
 
 ---
 

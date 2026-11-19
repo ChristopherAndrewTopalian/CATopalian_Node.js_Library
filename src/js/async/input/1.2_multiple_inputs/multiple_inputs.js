@@ -33,7 +33,7 @@ askForNames();
 What is your first name? Christopher
 What is your last name? Topalian
 
-Howdy, Christopher Topalian! Great to meet you.
+Howdy, Christopher Topalian! Good to meet you.
 */
 
 //----//
